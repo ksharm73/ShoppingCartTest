@@ -17,5 +17,15 @@ namespace ShoppingCart.Implementation
         {
             return _products.FirstOrDefault(x => x.Id == id);
         }
+
+        public List<Product> GetAll()
+        {
+            return _products;
+        }
+
+        public List<Product> GetAllById(List<int> id)
+        {
+            return _products.Where(x => id.Contains(x.Id)).ToList();
+        }
     }
 }
