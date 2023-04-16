@@ -27,5 +27,10 @@ namespace ShoppingCart.Implementation
         {
             return _products.Where(x => id.Contains(x.Id)).ToList();
         }
+
+        public Product GetByName(string name)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

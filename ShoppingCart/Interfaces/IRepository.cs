@@ -8,6 +8,6 @@ namespace ShoppingCart.Interfaces
         void Add(T item);
         T Get(int id);
         List<T> GetAll();
-        List<T> GetAllById(List<int> id);
+        T GetByName(string name);
     }
 }

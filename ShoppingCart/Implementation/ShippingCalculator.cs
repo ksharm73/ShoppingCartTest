@@ -4,7 +4,7 @@ namespace ShoppingCart.Implementation
 {
     public class ShippingCalculator : IShippingCalculator
     {
-        public double CalcShipping(double cartTotal)
+        public decimal CalcShipping(decimal cartTotal)
         {
             if (cartTotal < 20) return 7;
             if (cartTotal < 40) return 5;
